@@ -6,7 +6,7 @@ namespace app.web.core.stubs
   {
     public IProvideDetailsForACommand create_request_from(HttpContext context)
     {
-      return new StubRequest();
+        return Stub.with<StubRequest>();
     }
 
     class StubRequest : IProvideDetailsForACommand
