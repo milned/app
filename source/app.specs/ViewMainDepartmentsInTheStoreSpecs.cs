@@ -34,7 +34,7 @@ namespace app.specs
         sut.run(request);
 
       It should_display_the_list_of_the_main_departments = () =>
-        display_engine.display(the_main_departments);
+        display_engine.received(x => x.display(the_main_departments));
 
 
 
@@ -44,4 +44,11 @@ namespace app.specs
       static IDisplayReports display_engine;
     }
   }
+
+
+
+
+
+
+ 
 }
